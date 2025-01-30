@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: true, // Aktifkan React Strict Mode
+  swcMinify: true, // Gunakan SWC untuk minifikasi
 };
 
 export default nextConfig;
