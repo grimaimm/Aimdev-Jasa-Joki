@@ -19,32 +19,40 @@ export default {
     './node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['var(--onestSans-font)'],
+        sora: ['var(--soraSans-font)'],
+        onest: ['var(--onestSans-font)'],
+        code: ['var(--firaCode-font)'],
+        emoji: ['Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'],
+      },
+    },
   },
+  darkMode: 'class',
   plugins: [
     require('daisyui'),
     heroui({
       prefix: 'heroui',
       addCommonColors: false,
       defaultTheme: 'light',
-      themes: {
-        light: {
-          colors: {},
-        },
-        dark: {
-          colors: {},
-        },
-      },
+      // themes: {
+      //   light: {
+      //     colors: {},
+      //   },
+      //   dark: {
+      //     colors: {},
+      //   },
+      // },
     }),
   ],
 
   // daisyUI config (optional - here are the default values)
   daisyui: {
-    themes: false,
+    themes: ["light"],
     base: true,
     styled: true,
     utils: true,
-    prefix: 'daisyui',
     logs: true,
     themeRoot: ':root',
   },
