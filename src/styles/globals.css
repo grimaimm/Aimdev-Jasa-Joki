@@ -1,3 +1,106 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  @layer responsive {
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar,
+    *::-webkit-scrollbar {
+      display: none;
+    }
+    html,
+    body,
+    * {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.mockup-code {
+  position: relative;
+  overflow: hidden;
+  overflow-x: auto;
+  min-width: 18rem /* 288px */;
+  border-radius: var(--rounded-box, 1rem /* 16px */);
+  --tw-bg-opacity: 1;
+  padding-top: 1.25rem /* 20px */;
+  padding-bottom: 0rem /* 20px */;
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc, oklch(var(--nc) / var(--tw-text-opacity)));
+  direction: ltr;
+}
+.mockup-code pre[data-prefix]:before {
+  content: attr(data-prefix);
+  content: attr(data-prefix);
+  display: inline-block;
+  text-align: right;
+  width: 5rem /* 32px */;
+  opacity: 0.5;
+}
+.mockup-code:before {
+  content: '';
+  margin-bottom: 0.5rem /* 16px */;
+  display: block;
+  height: 0.75rem /* 12px */;
+  width: 0.75rem /* 12px */;
+  border-radius: 9999px;
+  opacity: 0.5;
+  box-shadow:
+    1.4em 0 #ff0000,
+    2.8em 0 rgb(255, 255, 0),
+    4.2em 0 rgb(0, 255, 0);
+}
+.mockup-code pre {
+  padding-right: 1.25rem /* 20px */;
+}
+.mockup-code pre:before {
+  content: '';
+  margin-right: 2ch;
+}
+
+.mockup-window {
+  position: relative;
+  overflow: hidden;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--rounded-box, 1rem /* 16px */);
+  padding-top: 1.25rem /* 20px */;
+}
+.mockup-window pre[data-prefix]:before {
+  content: attr(data-prefix);
+  display: inline-block;
+  text-align: right;
+}
+.mockup-window:before {
+  content: '';
+  margin-bottom: 1rem /* 16px */;
+  display: block;
+  aspect-ratio: 1 / 1;
+  height: 0.75rem /* 12px */;
+  flex-shrink: 0;
+  align-self: flex-start;
+  border-radius: 9999px;
+  opacity: 0.5;
+  box-shadow:
+    1.4em 0 #ff0000,
+    2.8em 0 rgb(255, 255, 0),
+    4.2em 0 rgb(0, 255, 0);
+}
+.mockup-window:where([dir='rtl'], [dir='rtl'] *):before {
+  align-self: flex-end;
+}
