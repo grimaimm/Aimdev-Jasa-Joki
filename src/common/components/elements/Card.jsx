@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export function CardMockupCode({ children, className = '', ...others }) {
+export const CardMockupCode = ({ children, className = '', ...others }) => {
   return (
     <div
       data-testid='mockup-code'
@@ -10,4 +10,4 @@ export function CardMockupCode({ children, className = '', ...others }) {
       {children}
     </div>
   );
-}
+};

@@ -1,19 +1,30 @@
-import * as React from 'react';
 import '@/styles/globals.css';
+import 'aos/dist/aos.css';
+
+import AOS from 'aos';
+import React from 'react';
+import StyleGlobal from '@/common/components/elements/StyleGlobal';
+import AppLayout from '@/common/components/layouts/AppLayouts';
 import { HeroUIProvider } from '@heroui/system';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import { AppLayouts } from '@/common/components/layouts/AppLayouts';
-import StyleGlobal from '@/common/components/elements/StyleGlobal';
 
 export default function App({ Component, pageProps }) {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 800,
+      delay: 50,
+      // offset: 10
+    });
+  }, []);
+
   return (
     <>
       <StyleGlobal />
       <HeroUIProvider>
         <NextThemesProvider attribute='class' defaultTheme='light'>
-          <AppLayouts>
+          <AppLayout>
             <Component {...pageProps} />
-          </AppLayouts>
+          </AppLayout>
         </NextThemesProvider>
       </HeroUIProvider>
     </>

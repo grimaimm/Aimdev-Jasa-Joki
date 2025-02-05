@@ -111,3 +111,41 @@ export const MENU_ITEMS = [
 //   type: 'Sections',
 //   isPages: false,
 // },
+
+export const SECTION_MENU = [
+  {
+    key: 'Introduction',
+    label: 'Introduction',
+    sectionId: 'introduction',
+  },
+  {
+    key: 'Why Choose Us',
+    label: 'Why Choose Us',
+    sectionId: 'why-choose-us',
+  },
+  {
+    key: 'App Types',
+    label: 'App Types',
+    sectionId: 'app-types',
+  },
+  {
+    key: 'Tech We Use',
+    label: 'Tech We Use',
+    sectionId: 'tech-we-use',
+  },
+  {
+    key: 'Pricing Plans',
+    label: 'Pricing Plans',
+    sectionId: 'pricing-plans',
+  },
+  {
+    key: 'FAQ',
+    label: 'FAQ',
+    sectionId: 'asked-questions',
+  },
+  {
+    key: 'Contact Us',
+    label: 'Contact Us',
+    sectionId: 'cta',
+  },
+];

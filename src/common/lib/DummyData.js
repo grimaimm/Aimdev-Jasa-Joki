@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   FaUsers as ProgrammerIcon,
   FaCode as CodeIcon,
@@ -6,7 +7,8 @@ import {
 } from 'react-icons/fa';
 import { RiCodeAiLine as AIIcon } from 'react-icons/ri';
 import { LuAlarmClock as ClockIcon } from 'react-icons/lu';
-import React from 'react';
+import { IoLogoWhatsapp, IoMailOutline } from 'react-icons/io5';
+import { CgWebsite } from 'react-icons/cg';
 
 const sizeIcon = 24;
 
@@ -178,5 +180,28 @@ const kontakKami = [
 ];
 
 console.log(kontakKami);`,
+  },
+];
+
+// ================= Data Information Contact ================= //
+
+export const dataSosmed = [
+  {
+    id: 1,
+    name: 'WhatsApp',
+    icon: <IoLogoWhatsapp size={24} />,
+    link: '',
+  },
+  {
+    id: 1,
+    name: 'Email',
+    icon: <IoMailOutline size={24} />,
+    link: '',
+  },
+  {
+    id: 1,
+    name: 'WhatsApp',
+    icon: <CgWebsite size={24} />,
+    link: '',
   },
 ];

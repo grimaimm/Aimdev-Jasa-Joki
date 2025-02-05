@@ -13,15 +13,3 @@ const ThemeSwitcherDefault = () => {
   );
 };
 export default ThemeSwitcherDefault;
-
-// import dynamic from 'next/dynamic';
-// import React from 'react';
-
-// const ThemeSwitcherDefault = dynamic(
-//   () => import('@/common/components/elements/ThemeSwitcherDefault'),
-//   { ssr: false },
-// );
-
-// export default function Home() {
-//   return <ThemeSwitcherDefault />;
-// }

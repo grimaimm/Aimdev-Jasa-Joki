@@ -1,6 +1,8 @@
+import React from 'react';
+
 export const ContainerLayout = ({ children, className = '', ...others }) => {
   return (
-    <div className={`${className}`} {...others}>
+    <div className={className} {...others}>
       {children}
     </div>
   );
@@ -8,13 +10,13 @@ export const ContainerLayout = ({ children, className = '', ...others }) => {
 
 export const ContainerContent = ({
   children,
-  background = '',
   className = '',
+  background = '',
   ...others
 }) => {
   return (
-    <div className={`${background}`}>
-      <main className={`${className}`} {...others}>
+    <div className={background}>
+      <main className={className} {...others}>
         {children}
       </main>
     </div>
@@ -23,13 +25,13 @@ export const ContainerContent = ({
 
 export const SectionContent = ({
   children,
-  background = '',
   className = '',
+  background = '',
   ...others
 }) => {
   return (
-    <div className={`${background}`}>
-      <section className={`${className}`} {...others}>
+    <div className={background}>
+      <section className={className} {...others}>
         {children}
       </section>
     </div>

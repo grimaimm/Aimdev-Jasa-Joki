@@ -1,11 +1,16 @@
 import React from 'react';
 import PageHeading from '@/common/components/elements/PageHeading';
-import CodeBlock from '@/common/components/elements/CodeBlock';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { ButtonSecondary } from '@/common/components/elements/ButtonCustom';
 import { CardMockupCode } from '@/common/components/elements/Card';
 import { HeroSectionStart } from '@/common/components/elements/HeroSections';
 import { dataInformationContact } from '@/common/lib/DummyData';
+
+const CodeBlock = dynamic(
+  () => import('@/common/components/elements/CodeBlock'),
+  { ssr: false },
+);
 
 const CallToAction = () => {
   const { blockcodeone } = dataInformationContact[0];

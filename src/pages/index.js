@@ -1,20 +1,12 @@
-// import LandingPage from '@/modules/LandingPage/LandingPage';
-import LandingPage from '@/modules/LandingPage';
-import { NextSeo } from 'next-seo';
-// import dynamic from 'next/dynamic';
 import React from 'react';
+import Home from '@/modules/homePage';
+import { NextSeo } from 'next-seo';
 
-// const ThemeSwitcher = dynamic(
-//   () => import('@/common/components/elements/ThemeSwitcher'),
-//   { ssr: false },
-// );
-
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <NextSeo title='Home | AimdevJT' />
-      {/* <LandingPage /> */}
-      <LandingPage />
+      <Home />
     </>
   );
 }

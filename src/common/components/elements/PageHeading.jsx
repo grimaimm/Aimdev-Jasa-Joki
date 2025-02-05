@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function PageHeading({
+const PageHeading = ({
   sentenceOne = '',
   sentenceTwo = '',
   sentenceThree = '',
@@ -12,7 +12,7 @@ export default function PageHeading({
   className = '',
   descClass = '',
   ...others
-}) {
+}) => {
   return (
     <>
       <div className={`${widthTitle}`}>
@@ -42,4 +42,6 @@ export default function PageHeading({
       )}
     </>
   );
-}
+};
+
+export default PageHeading;

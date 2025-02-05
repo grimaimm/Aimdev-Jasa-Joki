@@ -9,21 +9,29 @@ const WhyChooseUs = () => {
   return (
     <>
       <HeroSectionCenter>
-        <BadgePrimary>Why Choose Us</BadgePrimary>
-        <PageHeading
-          widthTitle='md:max-w-[576px] lg:max-w-[868px]'
-          widthDesc='mb-2 max-w-[450px]'
-          importantSentenceOne='Kenapa'
-          sentenceOne='Harus Pakai'
-          importantSentenceTwo='Jasa Kami?'
-          description='Kami bukan sekadar joki tugas, tapi partner yang siap bantu kamu sampai PAHAM !!!'
-        />
+        <div
+          className='flex flex-col items-center gap-4'
+          data-aos='fade-up'
+          data-aos-delay='50'
+        >
+          <BadgePrimary>Why Choose Us</BadgePrimary>
+          <PageHeading
+            widthTitle='md:max-w-[576px] lg:max-w-[868px]'
+            widthDesc='mb-2 max-w-[450px]'
+            importantSentenceOne='Kenapa'
+            sentenceOne='Harus Pakai'
+            importantSentenceTwo='Jasa Kami?'
+            description='Kami bukan sekadar joki tugas, tapi partner yang siap bantu kamu sampai PAHAM !!!'
+          />
+        </div>
         <div className='mb-4 grid w-full grid-cols-1 gap-6 md:mt-6 md:grid-cols-2 xl:grid-cols-3'>
           {dataWhyChooseUs.map((item) => (
             <Card
               key={item.id}
               isBlurred
               className='relative w-full border border-transparent bg-white dark:border-zinc-800 dark:bg-zinc-900/80'
+              data-aos='zoom-in-up'
+              data-aos-delay={item.id * 50}
             >
               <div className='absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808018_1px,transparent_1px),linear-gradient(to_bottom,#80808018_1px,transparent_1px)] bg-[size:18px_18px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_20%,#000_80%,transparent_100%)]'></div>
               <CardBody className='flex flex-row gap-4 p-4'>

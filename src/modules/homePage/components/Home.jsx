@@ -6,10 +6,9 @@ import TechWeUse from './TechWeUse';
 import PricingPlans from './PricingPlans';
 import AskedQuestions from './AskedQuestions';
 import AppTypes from './AppTypes';
-import AppTypesCenter from './AppTypesCenter';
 import CallToAction from './CallToAction';
 
-const LandingPage = () => {
+const Home = () => {
   return (
     <>
       <SectionContent
@@ -31,7 +30,6 @@ const LandingPage = () => {
         background=''
         className='mx-auto max-w-screen-xl px-2 pb-16 pt-16'
       >
-        {/* <AppTypesCenter /> */}
         <AppTypes />
       </SectionContent>
       <SectionContent
@@ -66,4 +64,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default Home;

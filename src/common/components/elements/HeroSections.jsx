@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function HeroSectionCenter({ children, className = '', ...others }) {
+export const HeroSectionCenter = ({ children, className = '', ...others }) => {
   return (
     <div className='hero'>
       <div
@@ -11,9 +11,9 @@ export function HeroSectionCenter({ children, className = '', ...others }) {
       </div>
     </div>
   );
-}
+};
 
-export function HeroSectionStart({ children, className = '', ...others }) {
+export const HeroSectionStart = ({ children, className = '', ...others }) => {
   return (
     <div className='hero'>
       <div className={`hero-content flex flex-col ${className}`} {...others}>
@@ -21,4 +21,4 @@ export function HeroSectionStart({ children, className = '', ...others }) {
       </div>
     </div>
   );
-}
+};

@@ -1,22 +1,23 @@
+// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 
 const { heroui } = require('@heroui/react');
 
-export default {
+module.exports = {
   content: [
     // Next.js
-    './src/**/*.{js,ts,jsx,mdx}',
-    './src/**/**/*.{js,ts,jsx,mdx}',
-    './src/**/**/**/*.{js,ts,jsx,mdx}',
-    './src/**/**/**/**/*.{js,ts,jsx,mdx}',
-    './src/**/**/**/**/**/*.{js,ts,jsx,mdx}',
-    './src/**/**/**/**/**/**/*.{js,ts,jsx,mdx}',
-    './src/**/**/**/**/**/**/**/*.{js,ts,jsx,mdx}',
-    './src/**/**/**/**/**/**/**/**/*.{js,ts,jsx,mdx}',
-    './src/**/**/**/**/**/**/**/**/**/*.{js,ts,jsx,mdx}',
+    './src/**/*.{js,jsx,mdx}',
+    './src/**/**/*.{js,jsx,mdx}',
+    './src/**/**/**/*.{js,jsx,mdx}',
+    './src/**/**/**/**/*.{js,jsx,mdx}',
+    './src/**/**/**/**/**/*.{js,jsx,mdx}',
+    './src/**/**/**/**/**/**/*.{js,jsx,mdx}',
+    './src/**/**/**/**/**/**/**/*.{js,jsx,mdx}',
+    './src/**/**/**/**/**/**/**/**/*.{js,jsx,mdx}',
+    './src/**/**/**/**/**/**/**/**/**/*.{js,jsx,mdx}',
 
     // HeroUI
-    './node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@heroui/theme/dist/**/*.{js,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -46,7 +47,7 @@ export default {
     base: true,
     styled: true,
     utils: true,
-    logs: true,
+    logs: false,
     themeRoot: ':root',
   },
 };

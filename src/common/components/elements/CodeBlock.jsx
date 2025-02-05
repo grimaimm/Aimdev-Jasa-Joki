@@ -1,8 +1,6 @@
+import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import {
-  solarizedlight,
-  dracula,
-} from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const CodeBlock = ({ language, value }) => {
   return (
@@ -11,9 +9,9 @@ const CodeBlock = ({ language, value }) => {
       style={solarizedlight}
       wrapLongLines
       customStyle={{
-        marginTop: '-2rem',
         backgroundColor: 'transparent',
         zIndex: 10,
+        marginTop: '0', // Removed negative margin, adjusted for cleaner layout
       }}
     >
       {value}
