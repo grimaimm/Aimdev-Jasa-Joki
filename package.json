@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "eslint": "eslint . --fix",
+    "eslint": "eslint --fix .",
     "prepare": "husky",
     "format": "prettier --write .",
     "format:check": "prettier -c ."
@@ -38,6 +38,7 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
+    "eslint-config-prettier": "^10.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
     "postcss": "^8.5.1",
