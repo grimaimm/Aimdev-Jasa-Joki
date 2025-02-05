@@ -1,5 +1,11 @@
 import React from 'react';
-import { firaCode, jakartaSans, onestSans, soraSans } from '@/styles/font';
+import {
+  aguarita,
+  firaCode,
+  jakartaSans,
+  onestSans,
+  soraSans,
+} from '@/styles/font';
 
 const StyleGlobal = () => {
   return (
@@ -10,6 +16,7 @@ const StyleGlobal = () => {
           --soraSans-font: ${soraSans.style.fontFamily};
           --firaCode-font: ${firaCode.style.fontFamily};
           --onestSans-font: ${onestSans.style.fontFamily};
+          --aguarita-font: ${aguarita.style.fontFamily};
         }
       `}
     </style>
