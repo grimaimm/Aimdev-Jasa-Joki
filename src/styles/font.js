@@ -1,4 +1,5 @@
 import { Fira_Code, Onest, Plus_Jakarta_Sans, Sora } from 'next/font/google';
+import localFont from 'next/font/local';
 
 export const jakartaSans = Plus_Jakarta_Sans({
   variable: '--jakartaSans-font',
@@ -25,4 +26,8 @@ export const onestSans = Onest({
   subsets: ['latin'],
   display: 'fallback',
   weight: ['300', '400', '500', '600', '700', '800'],
+});
+
+export const aguarita = localFont({
+  src: '../styles/fonts/AguaritaDemo-z8vZG.ttf',
 });
