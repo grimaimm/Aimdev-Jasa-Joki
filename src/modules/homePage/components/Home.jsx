@@ -14,7 +14,7 @@ const Home = () => {
       <SectionContent
         id='introduction'
         background=''
-        className='mx-auto max-w-screen-xl px-2 pb-16 pt-8'
+        className='mx-auto max-w-screen-xl px-2 pb-16 pt-8 max-lg:pb-32'
       >
         <Introduction />
       </SectionContent>

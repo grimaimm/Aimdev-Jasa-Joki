@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }) {
     AOS.init({
       duration: 800,
       delay: 50,
+      once: true,
       // offset: 10
     });
   }, []);

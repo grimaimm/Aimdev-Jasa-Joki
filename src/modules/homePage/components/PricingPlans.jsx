@@ -9,20 +9,28 @@ const PricingPlans = () => {
   return (
     <>
       <HeroSectionCenter className='w-full'>
-        <BadgePrimary>Pricing Plans</BadgePrimary>
-        <PageHeading
-          widthTitle='md:max-w-[728px] lg:max-w-[868px]'
-          widthDesc='mb-2 max-w-[450px]'
-          sentenceOne='Pilihan'
-          importantSentenceTwo='Paket & Harga'
-          description='Harga menyesuaikan kompleksitas proyek, tapi tetap ramah di kantong kok :v'
-        />
+        <div
+          className='flex flex-col items-center gap-4'
+          data-aos='fade-up'
+          data-aos-delay='100'
+        >
+          <BadgePrimary>Pricing Plans</BadgePrimary>
+          <PageHeading
+            widthTitle='md:max-w-[728px] lg:max-w-[868px]'
+            widthDesc='mb-2 max-w-[450px]'
+            sentenceOne='Pilihan'
+            importantSentenceTwo='Paket & Harga'
+            description='Harga menyesuaikan kompleksitas proyek, tapi tetap ramah di kantong kok :v'
+          />
+        </div>
         <div className='grid w-full grid-cols-1 gap-6 md:mt-6 md:grid-cols-3'>
           {dataPricingPlans.map((item) => (
             <Card
               key={item.id}
               isBlurred
               className='relative w-full border border-transparent bg-white dark:border-zinc-800 dark:bg-zinc-900/80'
+              data-aos='zoom-in-up'
+              data-aos-delay={item.id * 100}
             >
               <div className='absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:18px_18px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_20%,#000_80%,transparent_100%)]'></div>
               <CardHeader className='flex justify-center px-6 pb-2 pt-6'>

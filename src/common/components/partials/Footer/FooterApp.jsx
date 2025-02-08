@@ -6,7 +6,7 @@ import Sosmed from './Sosmed';
 const FooterApp = () => {
   return (
     <div className='w-full text-default-500'>
-      <footer className='mx-auto flex max-w-screen-xl flex-col items-center justify-between px-6 py-6 md:flex-row'>
+      <footer className='mx-auto flex max-w-screen-xl flex-col-reverse items-center justify-between px-4 py-4 text-sm md:flex-row md:text-base'>
         <aside className='flex items-center gap-2'>
           <AimdevLogo />
           <p>AimdevJT © {new Date().getFullYear()} - All right reserved</p>

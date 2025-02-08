@@ -12,14 +12,20 @@ const AskedQuestions = () => {
   return (
     <>
       <HeroSectionCenter>
-        <BadgePrimary>FAQ</BadgePrimary>
-        <PageHeading
-          widthTitle='md:max-w-[728px] lg:max-w-[868px]'
-          widthDesc='mb-2 max-w-[450px]'
-          importantSentenceOne='Pertanyaan'
-          sentenceOne='yang Sering Diajukan'
-          description='Jawaban lengkap seputar layanan kami, biar kamu makin yakin sebelum order!'
-        />
+        <div
+          className='flex flex-col items-center gap-4'
+          data-aos='fade-up'
+          data-aos-delay='100'
+        >
+          <BadgePrimary>FAQ</BadgePrimary>
+          <PageHeading
+            widthTitle='md:max-w-[728px] lg:max-w-[868px]'
+            widthDesc='mb-2 max-w-[450px]'
+            importantSentenceOne='Pertanyaan'
+            sentenceOne='yang Sering Diajukan'
+            description='Jawaban lengkap seputar layanan kami, biar kamu makin yakin sebelum order!'
+          />
+        </div>
       </HeroSectionCenter>
       <div className='mx-auto mb-6 w-full gap-6 px-2 md:mt-6 md:max-w-4xl'>
         <Accordion
@@ -39,6 +45,8 @@ const AskedQuestions = () => {
               aria-label={item.question}
               title={item.question}
               indicator={<IoChevronBack />}
+              data-aos='zoom-in-up'
+              data-aos-delay={item.id * 100}
             >
               {item.answer}
             </AccordionItem>

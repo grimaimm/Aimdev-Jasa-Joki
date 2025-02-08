@@ -36,6 +36,34 @@ console.log("Hello World")
   },
 ];
 
+export const dataIntroductionV1 = [
+  {
+    id: 1,
+    language: 'javascript',
+    code: `
+const layananKami = [
+  {
+    Cepat: "Deadline mepet? Santai, kami gercep!",
+    Kece: "Web rapi, modern, dan sesuai kebutuhan.",
+    Terjangkau: "Murah tapi tetap berkualitas!",
+    Aman: "Data aman, privasi terjaga.",
+  },
+];
+
+console.log(layananKami);`,
+  },
+  {
+    id: 2,
+    language: 'javascript',
+    code: `
+print("Hello World")
+
+console.log("Hello World")
+
+<?php echo "Hello World"; ?>`,
+  },
+];
+
 // ================= Data Why Choose Us ================= //
 
 export const dataWhyChooseUs = [
@@ -200,7 +228,7 @@ export const dataSosmed = [
   },
   {
     id: 1,
-    name: 'WhatsApp',
+    name: 'Portfolio',
     icon: <CgWebsite size={24} />,
     link: '',
   },
