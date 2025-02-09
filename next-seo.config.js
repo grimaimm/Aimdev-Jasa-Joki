@@ -1,27 +1,25 @@
-const siteUrl = process.env.SITE_URL || 'http://localhost:3004';
+// next-seo.config.js
 
-const canonicalUrl = { siteUrl };
-const metaImage = `${siteUrl}/images/introduction.png`;
+const canonicalUrl = 'https://aimdevjoki.vercel.app/';
+const metaImage = 'https://aimdevjoki.vercel.app/images/introduction.png';
 const metaDescription =
   'Kami yang bikin, kamu fokus ke hal lain. Jadi, gak perlu pusing ngoding, kami yang urusin! Hehe3x.';
-const metaKeywords =
-  'aimdev, aimdevjoki, aimdevjokitugas, joki tugas, joki tugas website, tugas kuliah, tugas skripsi, aimdevjokitugas.xyz';
 const metaAuthor = 'aimdev.xyz';
 const metaGoogleBot = 'index, follow';
 
 const defaultSEOConfig = {
   defaultTitle: 'Aimdev Joki Tugas Website',
+  title: 'Aimdev Joki Tugas Website',
   description: metaDescription,
   canonical: canonicalUrl,
-  keywords: metaKeywords,
   author: metaAuthor,
   googlebot: metaGoogleBot,
+  site_name: 'Aimdev Joki Tugas Website',
   openGraph: {
+    url: canonicalUrl,
     canonical: canonicalUrl,
     title: 'Aimdev Joki Tugas Website',
     description: metaDescription,
-    keywords:
-      'aimdev, aimdevjoki, aimdevjokitugas, joki tugas, joki tugas website, tugas kuliah, tugas skripsi, aimdevjokitugas.xyz',
     type: 'website',
     locale: 'id-ID',
     images: [
@@ -44,13 +42,26 @@ const defaultSEOConfig = {
         height: 900,
       },
     ],
-    site_name: 'Aimdev Joki Tugas Website',
   },
   twitter: {
     handle: '@handle',
     site: '@site',
     cardType: 'summary_large_image',
   },
+  additionalMetaTags: [
+    {
+      name: 'theme-color',
+      content: '#000000',
+    },
+    {
+      name: 'msapplication-navbutton-color',
+      content: '#000000',
+    },
+    {
+      name: 'apple-mobile-web-app-status-bar-style',
+      content: '#000000',
+    },
+  ],
 };
 
 export default defaultSEOConfig;
