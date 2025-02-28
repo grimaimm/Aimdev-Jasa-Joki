@@ -1,5 +1,4 @@
 // next-seo.config.js
-
 const canonicalUrl = 'https://jokitugas.aimdev.web.id/';
 const metaImage = 'https://jokitugas.aimdev.web.id/images/introduction_one.png';
 const metaDescription =
@@ -12,7 +11,7 @@ const defaultSEOConfig = {
   title: 'Aimdev Joki Tugas Website',
   description: metaDescription,
   canonical: canonicalUrl,
-  authorName: metaAuthor,
+  authors: metaAuthor,
   googlebot: metaGoogleBot,
   site_name: 'Aimdev Joki Tugas Website',
   openGraph: {
@@ -51,16 +50,62 @@ const defaultSEOConfig = {
   },
   additionalMetaTags: [
     {
+      name: 'keywords',
+      content:
+        'aimdev jokitugas, aimdevjt, aimdev, jokitugas, joki, tugas, website, joki tugas aimdev, joki skripsi aimdev, joki web aimdev',
+    },
+    {
       name: 'theme-color',
-      content: '#000000',
+      content: '#09090b',
     },
     {
       name: 'msapplication-navbutton-color',
-      content: '#000000',
+      content: '#09090b',
     },
     {
       name: 'apple-mobile-web-app-status-bar-style',
-      content: '#000000',
+      content: '#09090b',
+    },
+    {
+      name: 'msapplication-TileColor',
+      content: '#09090b',
+    },
+    {
+      name: 'google-site-verification',
+      content: 'H8oEgquIF2vFvhySnsZtchBi-4LNQxI7HlKQjXz0TIA',
+    },
+  ],
+  additionalLinkTags: [
+    {
+      rel: 'icon',
+      href: `${canonicalUrl}favicon/favicon.ico`,
+      type: 'image/x-icon',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: `${canonicalUrl}favicon/favicon-32x32.png`,
+      sizes: '32x32',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: `${canonicalUrl}favicon/favicon-16x16.png`,
+      sizes: '16x16',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: `${canonicalUrl}favicon/apple-touch-icon.png`,
+      sizes: '180x180',
+    },
+    {
+      rel: 'mask-icon',
+      href: `${canonicalUrl}favicon/safari-pinned-tab.svg`,
+      color: '#09090b',
+    },
+    {
+      rel: 'manifest',
+      href: `${canonicalUrl}favicon/site.webmanifest`,
     },
   ],
 };
