@@ -35,10 +35,6 @@ export default function HomePage() {
             ],
           },
         ]}
-        rating={{
-          ratingValue: '4.8',
-          ratingCount: '120',
-        }}
       />
     </>
   );
