@@ -201,9 +201,9 @@ export const dataInformationContact = [
     blockcodeone: `
 const kontakKami = [
   {
-    WhatsApp: "+62 801-2345-6789",
+    WhatsApp: "+62 813-2597-0587",
     Email: "aimdev.code@gmail.com",
-    Alamat: "Denpasar, Bali, Indonesia",
+    Alamat: "Daerah Istimewa Yogyakarta, Indonesia",
   },
 ];
 

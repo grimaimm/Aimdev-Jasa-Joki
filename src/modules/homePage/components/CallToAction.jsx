@@ -51,7 +51,7 @@ const CallToAction = () => {
               description='Gak perlu pusing sama tugas atau skripsi yang butuh aplikasi web. Serahkan aja ke kami.'
             />
             <ButtonSecondary
-              link='https://wa.me/6285870655685?text=Halo%20kak,%20saya%20mau%20joki%20dong!'
+              link='https://wa.me/6281325970587?text=Halo%20kak,%20saya%20mau%20joki%20dong!'
               className='w-full md:w-fit'
               title='Chat Sekarang via WhatsApp'
             />

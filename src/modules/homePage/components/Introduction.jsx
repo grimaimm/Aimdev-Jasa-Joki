@@ -46,7 +46,7 @@ const Introduction = () => {
           />
           <div className='flex w-full flex-col gap-4 md:flex-row md:items-center md:justify-center md:gap-2'>
             <ButtonPrimary
-              link='https://wa.me/6285870655685?text=Halo%20kak,%20saya%20mau%20joki%20dong!'
+              link='https://wa.me/6281325970587?text=Halo%20kak,%20saya%20mau%20joki%20dong!'
               title='Kuy, Konsultasi Sekarang, Gratis!'
             />
           </div>

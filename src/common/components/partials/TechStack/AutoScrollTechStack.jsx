@@ -9,7 +9,7 @@ const AutoScrollTechStack = ({
   return (
     <Marquee
       direction={direction}
-      speed={40}
+      speed={20}
       className={withPadding ? 'py-2' : ''}
     >
       {children}

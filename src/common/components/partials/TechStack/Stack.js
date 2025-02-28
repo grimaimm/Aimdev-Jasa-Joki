@@ -18,6 +18,7 @@ import {
   SiSocketdotio,
   SiPhp,
   SiLaravel,
+  SiSupabase,
 } from 'react-icons/si';
 import { FaRobot } from 'react-icons/fa';
 import {
@@ -30,9 +31,9 @@ import { PiLightbulbFilament as FilamentPHPIcon } from 'react-icons/pi';
 const iconSize = '100%';
 
 export const TECH_STACKS = {
-  'Artificial Intelligence': (
-    <FaRobot size={iconSize} className='text-pink-500' />
-  ),
+  // 'Artificial Intelligence': (
+  //   <FaRobot size={iconSize} className='text-pink-500' />
+  // ),
   Bootstrap: (
     <BsFillBootstrapFill size={iconSize} className='text-purple-500' />
   ),
@@ -44,7 +45,7 @@ export const TECH_STACKS = {
   GitHub: <SiGithub size={iconSize} className='text-[##2b3137]' />,
   HTML: <SiHtml5 size={iconSize} className='text-orange-500' />,
   JavaScript: <SiJavascript size={iconSize} className='text-yellow-400' />,
-  'Jupyter Notebook': <SiJupyter size={iconSize} className='text-orange-500' />,
+  // 'Jupyter Notebook': <SiJupyter size={iconSize} className='text-orange-500' />,
   MySQL: <MySQLIcon size={iconSize} />,
   NextJS: <SiNextdotjs size={iconSize} className='text-[#805ad5]' />,
   NodeJS: <SiNodedotjs size={iconSize} className='text-green-600' />,
@@ -60,4 +61,5 @@ export const TECH_STACKS = {
   PHP: <SiPhp size={iconSize} className='text-[#484C89] dark:text-[#777BB3]' />,
   Laravel: <SiLaravel size={iconSize} className='text-[#fb503b]' />,
   Filament: <FilamentPHPIcon size={iconSize} className='text-[#ffa434]' />,
+  Superbase: <SiSupabase size={iconSize} className='text-[#2aae68]' />,
 };
