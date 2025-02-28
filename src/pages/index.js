@@ -16,7 +16,7 @@ export default function HomePage() {
         telephone='+6281325970587'
         address={{
           addressLocality: 'Yogyakarta',
-          addressRegion: 'Yogyakarta',
+          addressRegion: 'Daerah Istimewa Yogyakarta',
           addressCountry: 'ID',
         }}
         images={['https://jokitugas.aimdev.web.id/images/introduction_one.png']}
