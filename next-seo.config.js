@@ -12,10 +12,11 @@ const defaultSEOConfig = {
   title: 'Aimdev Joki Tugas Website',
   description: metaDescription,
   canonical: canonicalUrl,
-  author: metaAuthor,
+  authorName: metaAuthor,
   googlebot: metaGoogleBot,
   site_name: 'Aimdev Joki Tugas Website',
   openGraph: {
+    authors: metaAuthor,
     url: canonicalUrl,
     canonical: canonicalUrl,
     title: 'Aimdev Joki Tugas Website',

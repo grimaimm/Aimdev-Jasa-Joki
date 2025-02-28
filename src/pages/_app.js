@@ -9,6 +9,7 @@ import { HeroUIProvider } from '@heroui/system';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { DefaultSeo } from 'next-seo';
 import defaultSEOConfig from '../../next-seo.config';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }) {
   React.useEffect(() => {
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Analytics />
       <DefaultSeo {...defaultSEOConfig} />
       <StyleGlobal />
       <HeroUIProvider>
