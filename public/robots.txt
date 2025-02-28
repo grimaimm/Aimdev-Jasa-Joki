@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://aimdevjoki.vercel.app
+Host: https://jokitugas.aimdev.web.id
 
 # Sitemaps
-Sitemap: https://aimdevjoki.vercel.app/sitemap.xml
+Sitemap: https://jokitugas.aimdev.web.id/sitemap.xml

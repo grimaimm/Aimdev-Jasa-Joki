@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo';
 export default function HomePage() {
   return (
     <>
-      <NextSeo title='Home | AimdevJT' />
+      <NextSeo title='Aimdev Joki Tugas Website' />
       <Home />
     </>
   );
