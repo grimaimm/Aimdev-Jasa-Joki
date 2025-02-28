@@ -83,7 +83,7 @@ export const dataWhyChooseUs = [
     id: 3,
     icon: <DesktopIcon size={sizeIcon} />,
     title: 'Bisa Custom Sesuai Maumu',
-    desc: 'Mau sistem informasi, e-commerce, atau dashboard? Tinggal request, kita bikin sesuai kebutuhan.',
+    desc: 'Mau sistem informasi, e-commerce, atau dashboard? Tinggal request, kita buat sesuai kebutuhan.',
   },
   {
     id: 4,
@@ -149,7 +149,7 @@ export const dataAskedQuestions = [
     id: 1,
     question: 'Apakah ini aman dan legal?',
     answer:
-      'Jasa kami murni membantu pengembangan sistem. Kami nggak bikin skripsi atau laporan, jadi tetap sesuai etika akademik!',
+      'Jasa kami murni membantu pengembangan sistem. Kami nggak buat skripsi atau laporan, jadi tetap sesuai etika akademik!',
   },
   {
     id: 2,

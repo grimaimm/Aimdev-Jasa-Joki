@@ -11,7 +11,7 @@ export default function HomePage() {
         type='Joki Tugas'
         id='https://jokitugas.aimdev.web.id'
         name='Aimdev Joki Tugas Website'
-        description='Kami yang bikin, kamu fokus ke hal lain. Jadi, gak perlu pusing ngoding, kami yang urusin! Hehe3x.'
+        description='Kami yang buat, kamu fokus ke hal lain. Jadi, gak perlu pusing ngoding, kami yang urusin! Hehe3x.'
         url='https://jokitugas.aimdev.web.id'
         telephone='+6281325970587'
         address={{

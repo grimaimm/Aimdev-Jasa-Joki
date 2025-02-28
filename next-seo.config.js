@@ -2,7 +2,7 @@
 const canonicalUrl = 'https://jokitugas.aimdev.web.id/';
 const metaImage = 'https://jokitugas.aimdev.web.id/images/introduction_one.png';
 const metaDescription =
-  'Kami yang bikin, kamu fokus ke hal lain. Jadi, gak perlu pusing ngoding, kami yang urusin! Hehe3x.';
+  'Kami yang buat, kamu fokus ke hal lain. Jadi, gak perlu pusing ngoding, kami yang urusin! Hehe3x.';
 const metaAuthor = 'aimdev.xyz';
 const metaGoogleBot = 'index, follow';
 

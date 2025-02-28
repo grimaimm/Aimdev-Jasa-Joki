@@ -42,7 +42,7 @@ const Introduction = () => {
             importantSentenceTwo='Bikin Aplikasi Web?'
             sentenceTwo='Serahkan aja'
             sentenceThree='ke Kami'
-            description='Kami yang bikin, kamu fokus ke hal lain. Jadi, gak perlu pusing ngoding, kami yang urusin! Hehe3x.'
+            description='Kami yang buat, kamu fokus ke hal lain. Jadi, gak perlu pusing ngoding, kami yang urusin! Hehe3x.'
           />
           <div className='flex w-full flex-col gap-4 md:flex-row md:items-center md:justify-center md:gap-2'>
             <ButtonPrimary
